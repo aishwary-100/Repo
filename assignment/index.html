@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>View our Featured Speakers for the Event</h2>
+        <p>
+            Speakers are core contributors and industry thought leaders working at
+            <a href="#">companies</a> that push for innovation.
+        </p>
+    </div>
+    
+    <!-- Slideshow Container -->
+    <div class="slideshow-container">
+        <div class="slider" id="slider">
+          
+            <div class="mySlidesfade" onclick="openModal('John Doe', 'Chief Marketing Officer', 'Acme Corp', './1.png')">
+                <div class="card">
+                    <img src="./1.png" alt="">
+                    <h3>John Doe</h3>
+                    <p>Chief Marketing Officer</p>
+                    <span>Acme Corp</span>
+                </div>
+            </div>
+            <div class="mySlidesfade" onclick="openModal('Jane Smith', 'Chief Technology Officer', 'Tech Innovations', './2.png')">
+                <div class="card">
+                    <img src="./2.png" alt="">
+                    <h3>Jane Smith</h3>
+                    <p>Chief Technology Officer</p>
+                    <span>Tech Innovations</span>
+                </div>
+            </div>
+            <div class="mySlidesfade" onclick="openModal('Michael Johnson', 'Product Manager', 'Creative Solutions', './3.png')">
+                <div class="card">
+                    <img src="./3.png" alt="">
+                    <h3>Michael Johnson</h3>
+                    <p>Product Manager</p>
+                    <span>Creative Solutions</span>
+                </div>
+            </div>
+            <div class="mySlidesfade" onclick="openModal('Emily Davis', 'UX Designer', 'Design Studio', './4.png')">
+                <div class="card">
+                    <img src="./4.png" alt="">
+                    <h3>Emily Davis</h3>
+                    <p>UX Designer</p>
+                    <span>Design Studio</span>
+                </div>
+            </div>
+            <div class="mySlidesfade" onclick="openModal('John Doe', 'Chief Marketing Officer', 'Acme Corp', './1.png')">
+                <div class="card">
+                    <img src="./1.png" alt="">
+                    <h3>John Doe</h3>
+                    <p>Chief Marketing Officer</p>
+                    <span>Acme Corp</span>
+                </div>
+            </div>
+            <div class="mySlidesfade" onclick="openModal('Jane Smith', 'Chief Technology Officer', 'Tech Innovations', './2.png')">
+                <div class="card">
+                    <img src="./2.png" alt="">
+                    <h3>Jane Smith</h3>
+                    <p>Chief Technology Officer</p>
+                    <span>Tech Innovations</span>
+                </div>
+            </div>
+            <div class="mySlidesfade" onclick="openModal('Michael Johnson', 'Product Manager', 'Creative Solutions', './3.png')">
+                <div class="card">
+                    <img src="./3.png" alt="">
+                    <h3>Michael Johnson</h3>
+                    <p>Product Manager</p>
+                    <span>Creative Solutions</span>
+                </div>
+            </div>
+            <div class="mySlidesfade" onclick="openModal('Emily Davis', 'UX Designer', 'Design Studio', './4.png')">
+                <div class="card">
+                    <img src="./4.png" alt="">
+                    <h3>Emily Davis</h3>
+                    <p>UX Designer</p>
+                    <span>Design Studio</span>
+                </div>
+            </div>
+            <div class="mySlidesfade" onclick="openModal('John Doe', 'Chief Marketing Officer', 'Acme Corp', './1.png')">
+                <div class="card">
+                    <img src="./1.png" alt="">
+                    <h3>John Doe</h3>
+                    <p>Chief Marketing Officer</p>
+                    <span>Acme Corp</span>
+                </div>
+            </div>
+            <div class="mySlidesfade" onclick="openModal('Jane Smith', 'Chief Technology Officer', 'Tech Innovations', './2.png')">
+                <div class="card">
+                    <img src="./2.png" alt="">
+                    <h3>Jane Smith</h3>
+                    <p>Chief Technology Officer</p>
+                    <span>Tech Innovations</span>
+                </div>
+            </div>
+            <div class="mySlidesfade" onclick="openModal('Michael Johnson', 'Product Manager', 'Creative Solutions', './3.png')">
+                <div class="card">
+                    <img src="./3.png" alt="">
+                    <h3>Michael Johnson</h3>
+                    <p>Product Manager</p>
+                    <span>Creative Solutions</span>
+                </div>
+            </div>
+            <div class="mySlidesfade" onclick="openModal('Emily Davis', 'UX Designer', 'Design Studio', './4.png')">
+                <div class="card">
+                    <img src="./4.png" alt="">
+                    <h3>Emily Davis</h3>
+                    <p>UX Designer</p>
+                    <span>Design Studio</span>
+                </div>
+            </div>
+        </div>
+        
+       
+        <a class="prev" onclick="slideLeft()">&#10094;</a>
+        <a class="next" onclick="slideRight()">&#10095;</a>
+    </div>
+    
+
+    <div class="btn">
+        <button class="program-btn">See the Program</button>
+    </div>
+
+   
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="">
+            <h3 id="modalName"></h3>
+            <p id="modalPosition"></p>
+            <span id="modalCompany"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
